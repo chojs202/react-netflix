@@ -12,6 +12,7 @@
     "@types/react": "^18.3.18",
     "@types/react-dom": "^18.3.5",
     "framer-motion": "^11.16.0",
+    "gh-pages": "^6.3.0",
     "motion": "^11.16.0",
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
@@ -27,7 +28,10 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
+    "homepage": "https://chojs202.github.io/react-netflix/"
   },
   "eslintConfig": {
     "extends": [
